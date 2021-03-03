@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dlt645Dialog</class>
+ <widget class="QDialog" name="Dlt645Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DL/T 645-2007</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget21">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>291</width>
+     <height>117</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="1" column="2">
+     <widget class="QComboBox" name="comboBoxCmd">
+      <item>
+       <property name="text">
+        <string>11(读数据)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>12(读后续数据)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>13(改通讯地址)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>17(修改波特率)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1C(写入数据)</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="lineEditVal">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>新地址：</string>
+      </property>
+      <property name="buddy">
+       <cstring>lineEditVal</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="lineEditAddr">
+      <property name="maxLength">
+       <number>12</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>控制码：</string>
+      </property>
+      <property name="buddy">
+       <cstring>comboBoxCmd</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>地址：</string>
+      </property>
+      <property name="buddy">
+       <cstring>lineEditAddr</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>波特率：</string>
+      </property>
+      <property name="buddy">
+       <cstring>lineEditAddr</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QComboBox" name="comboBoxRate">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>2400</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>4800</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>9600</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>19200</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget22">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>170</y>
+     <width>291</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QComboBox" name="comboBoxDi3"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="comboBoxDi2"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QComboBox" name="comboBoxDi1"/>
+    </item>
+    <item row="0" column="3">
+     <widget class="QComboBox" name="comboBoxDi0"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget23">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>DI3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="buddy">
+       <cstring>comboBoxDi3</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>DI2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="buddy">
+       <cstring>comboBoxDi2</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>DI1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="buddy">
+       <cstring>comboBoxDi1</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_4">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>DI0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="buddy">
+       <cstring>comboBoxDi0</cstring>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget24">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>291</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>常用命令：</string>
+      </property>
+      <property name="buddy">
+       <cstring>comboBox</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>探测地址</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>00000000 总电能</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0000FF00 总电能块数据</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>02010100 A相电压</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>02010200 B相电压</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>02010300 C相电压</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0201FF00 电压块数据</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>02020100 A相电流</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>02020200 B相电流</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>02020300 C相电流</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0202FF00 电流块数据</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0203FF00 有功功率块数据</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0204FF00 无功功率块数据</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0206FF00 功率因素块数据</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>02800002 电网频率</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>040005FF 电表状态字</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>0290FF00 剩余电流</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>漏电开关分闸</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>漏电开关合闸</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dlt645Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dlt645Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
