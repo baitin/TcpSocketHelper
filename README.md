@@ -15,7 +15,7 @@ Socket、Serial Port
 
 ![avatar](/img/Serial-port.png)
 
-![avatar](/img/Modbus-tcp.png)
+![avatar](/img/modbus-tcp.png)
 
 ![avatar](/img/DLT645.png)
 
